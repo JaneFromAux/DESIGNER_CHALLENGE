@@ -1,10 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
-
 /* font-family: 'Roboto', sans-serif;
 Farben: #0b0c17 / #ff3571 / #dddddd / #3C30FF / #FFF / #000 */
-
 
 *{
     padding: 0;
@@ -14,4 +11,209 @@ Farben: #0b0c17 / #ff3571 / #dddddd / #3C30FF / #FFF / #000 */
 html{
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
+    background-color: #FFF;
+}
+/* HEADER */
+header{
+    background: right top / 55% no-repeat url('../img/ilustracion_people.png'), right top /55% no-repeat url('../img/ilustracion1.png');
+} 
+header nav{
+    height:75px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-left: 110px;
+}
+header nav img{
+    width: 3vw;
+    margin: 0 1vw 0 3vw;
+    position: fixed;
+    top: 30px;
+    left: 5px;
+}
+header nav section h4{
+    font-size: 2.2rem;
+}
+header div{
+    padding:12rem 12rem 8rem 12rem;
+    display:flex;
+    align-items: flex-end;
+    height:90vh;
+    width: 55%
+}
+header div section h1{
+    font-size: 7rem;
+}
+header div section h2{
+    font-size: 2rem;
+    padding: 2vh 0 12vh 0;
+    font-weight: 300;
+}
+header div section h2 span img{
+    width: 20px;
+    height: 20px;
+}
+header div section p{
+    font-size: 2rem;
+    color:#ff3571;
+}
+/* MAIN */
+main div:nth-of-type(1){
+    background: url('../img/images.jpg') center / 100% no-repeat;
+    height:100vh;
+}
+main h3{
+    font-size: 6rem;
+}
+main p{
+    font-size: 1.8rem;
+    font-weight:400;
+    padding-top: 2vh;
+}
+main section:nth-of-type(1) h3 span img{
+    width:60px;
+    height:60px;
+}
+main section:not(main section:nth-of-type(2),main section:nth-of-type(3)){
+    display:flex;
+    padding: 7vh 10vw 8vh 15vh;
+    justify-content:space-between;
+}
+main>section:nth-of-type(1){
+    margin: 20vh auto;
+}
+main section h3{
+    flex-basis: 35%;
+    padding-left: 3vw;
+    font-weight: 900;
+}
+main section p{
+    flex-basis: 52%;
+    line-height: 3.2rem;
+}
+main section h4{
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 1vh auto 1vh auto;
+}
+main section h5{
+    font-size: 7rem;
+    color:#dddddd;
+    padding-bottom: 12vh;
+}
+main section:nth-of-type(2):not(main div section:nth-of-type(2)), main section:nth-of-type(3):not(main div section:nth-of-type(3)){
+    justify-content: flex-start;
+    margin: 0 15vw 0 15vw;
+    display:flex;
+}
+main section:nth-of-type(2) img:not(main div section img), main section:nth-of-type(3)>img:not(main div section>img){
+    width:40px;
+    height: 40px;
+    margin: 0 5px;
+}
+main section:nth-of-type(2)>img:nth-of-type(2):not(main div section>img), main section:nth-of-type(3)>img:nth-of-type(2):not(main div section>img){
+    margin-left: 8vw;
+}
+main section:nth-of-type(2):not(main div section:nth-of-type(2)){
+    padding-top: 20vh;
+}
+main section:nth-of-type(3):not(main div section:nth-of-type(3)){
+    padding-bottom: 20vh;
+}
+main section:nth-of-type(2) article:not(main div section:nth-of-type(2) article), main section:nth-of-type(3) article:not(main div section:nth-of-type(3) article){
+    margin: 1vh auto 8vh 1vw;
+    width: 50%;
+}
+main>section:nth-of-type(2){
+    margin-top: 15vh;
+}
+
+main h2:nth-of-type(1) {
+    padding: 5vh 15vw;
+    font-size: 6rem;
+    width: 82%;
+}
+main h2:nth-of-type(2){
+    margin: 5vh auto;
+    font-size: 6rem;
+    width: 50%;
+    text-align:cent;
+}
+main > p {
+    margin: 5vh auto;
+    text-align: center;
+    font-size: 2.3rem;
+    width: 55%;
+}
+main div section {
+    display:flex;
+    padding: 15vh 5vw 5vh 8vw;
+    justify-content:space-between;
+}
+main div section >img, main div section article +img{
+    width: 46%;
+}
+main div section article{
+    width: 47.5%;
+}
+main div section article:nth-of-type(1), main div section article:nth-of-type(3){
+
+}
+main div section article img{
+    width: 40px;
+    font-size: 3rem;
+    margin: 0 auto 4vh auto;
+}
+/* FOOTER */
+footer h3 {
+    margin: 15vh auto 5vh auto;
+    font-size: 6rem;
+    width: 50%;
+    text-align:cent;
+}
+footer p:nth-of-type(1) {
+    margin: 5vh auto;
+    text-align: center;
+    font-size: 2.3rem;
+    width: 55%;
+}
+form{
+    width:35%;
+    margin: 0 auto 15vh auto;
+}
+input{
+    width: 100%;
+    line-height: 3rem;
+    text-align:center;
+    height: 8vh;
+    font-size: 2rem;
+    border-radius: 5px;
+    border: 1px solid white;
+    box-shadow: 0 0 30px #dddddd;
+}
+button{
+    display: block;
+    width:40%;
+    color:white;
+    background-color:#ff3571;
+    margin: 5vh auto;
+    height: 8vh;
+    font-size: 1.8rem;
+    border: 1px solid #ff3571;
+    border-radius: 5px;
+}
+button:hover{
+    background: linear-gradient(90deg, #ff3571,#3C30FF);
+    border:none;
+}
+footer p:nth-of-type(2){
+    text-align:left;
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin: 5vh auto 2vh 15vh;
+}
+footer p:nth-of-type(2) img{
+    width:20px;
+    height:18px;
+    margin-left: 10px;
 }
