@@ -26,6 +26,7 @@
                             src="assets/img/rocket.png" alt="rocket"></span></h2>
                 <p>SCROLL TO SEE MORE –</p>
             </section>
+            <img src="assets/img/ilustracion_people.png" alt="lucky_man">
         </div>
     </header>
     <main>
@@ -128,10 +129,15 @@
     <footer>
         <h3>Do you like this challenge?</h3>
         <p>Subscribe to be the first to hear about updates, tips and recommendations!</p>
-        <form action="" onsubmit="return false">
-            <input type="email" name="" id="inputEmail" required onclick="" placeholder="Write your email here">
-            <button id="openWindow" onclick="openWindow()">Subscribe</button>
+        <form action="" id="form" onsubmit="return false">
+            <input type="email" name="" id="inputEmail" required placeholder="Write your email here">
+            <input type="submit" name="" id="submit" value="Submit" onclick="showOverlay()">
         </form>
+        <div id="overlay">
+            <h2>Thank you for Subscribing!</h2>
+            <p> Your Email has been confirmed.</p>
+            <input type="submit" name="" id="hide" value="close window" onclick="hideOverlay()">
+        </div>
         <p>Created with Love by a Webdesigner <img src="assets/img/love.png" alt="heart"></p>
     </footer>
     <script src="assets/js/main.js"></script>

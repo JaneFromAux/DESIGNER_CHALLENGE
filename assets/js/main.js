@@ -1,13 +1,13 @@
 
 
-let openWindow = document.getElementById('openWindow');
+let email = document.getElementById('inputEmail');
+let overlay = document.getElementById('overlay');
 
-
-
-function openWindow() {
+function showOverlay() {
     console.log('function runs');
-    if (openWindow == true) {
-        window.open('url(../assets/html/emailConfirm.html)');
-
-    }
+    overlay.style.display = "block";
+}
+function hideOverlay() {
+    console.log('function closes');
+    overlay.style.display = 'none';
 }

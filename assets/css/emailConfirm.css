@@ -65,3 +65,9 @@ footer p:nth-of-type(2) img{
     height:18px;
     margin-left: 10px;
 }
+
+.toggleClass{
+    width: 4vh;
+    height:60vh;
+    background-color: #3C30FF;
+}
